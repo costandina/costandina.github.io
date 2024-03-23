@@ -1,0 +1,103 @@
+/*
+    Description: Stylesheet - Capstone Project for FILM398
+    Author: Dina Tantillo
+    Due Date: March 22, 2024
+*/
+
+* {
+    max-width: 10000px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    min-width: fit-content;
+    background: url('gradient.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body {
+    min-height: 100vh;
+    /*background-color: #e9e6e1;*/
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    padding-bottom: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: #030707;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #030707;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #030707;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.content {
+    text-align: left;
+    max-width: 550px;
+    min-width: 550px;
+    max-block-size: 500px;
+    font-size: 30px;
+    position: relative;
+    padding-left: 50px;
+    margin-right: 50px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.container img {
+    /* max-width: 20%; */
+    position: relative;
+    height: 475px;
+    width: 500px;
+    justify-self: left;
+    padding-right: 50px;
+    padding-top: 10px;
+}
