@@ -38,7 +38,7 @@ body {
     z-index: 100;
 }
 
-.logo {
+.logo a {
     font-size: 28px;
     color: #030707;
     text-decoration: none;
