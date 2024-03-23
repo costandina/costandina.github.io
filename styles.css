@@ -24,6 +24,7 @@ body {
 }
 
 .header {
+    text-decoration: none;
     position: fixed;
     top: 0;
     left: 0;
